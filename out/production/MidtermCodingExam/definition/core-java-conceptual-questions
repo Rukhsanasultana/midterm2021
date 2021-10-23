@@ -1,43 +1,50 @@
 Please answer the below core-java Questions:
 
 What is programing language?
-A.
+A.A programming language is a computer language programmers use to develop software programs, scripts, or other sets of instructions for computers to execute.
 
 What jdk contains or composed of and define each components?
-A.
+  A.It is a core package used in Java, along with the JVM (Java Virtual Machine) and the JRE (Java Runtime Environment)
 
 What is IDE?
-A.
+A.An integrated development environment (IDE) is software for building applications that combines common developer tools into a single graphical user interface (GUI).
 
 What are the IDEs available in the market to support java?
 A.
-
+Eclipse. Eclipse is one of the most popular Java IDEs on the market. ...
+NetBeans. Apache NetBeans is the official IDE for Java 8, making it a top Java IDE for creating desktop, mobile, and web applications. ...
+IntelliJ IDEA. ...
+BlueJ. ...
+Oracle JDeveloper. ...
+MyEclipse. ...
+Greenfoot. ...
+jGRASP.
 Explain the entire java life cycle.
 A.
-
+Life cycle of a java program tells us what happens right from the point when we type source code in a text editor to the point that source code is converted into machine code (0's and 1's). ... Editing the program. Compiling the source code. Executing the byte code.
 what is class?
-A.
+A. a class describes the contents of the objects that belong to it: it describes an aggregate of data fields (called instance variables), and defines the operations (called methods). object: an object is an element (or instance) of a class; objects have the behaviors of their class.
 
 What is object?
 A.
-
+A Java object is a member (also called an instance) of a Java class. Each object has an identity, a behavior and a state. The state of an object is stored in fields (variables), while methods (functions) display the object's behavior. Objects are created at runtime from templates, which are also known as classes.
 What is the entry point of an application?
 A.
 
 Why main is static?
-A.
+A.that compiler can call it without the creation of an object or before the creation of an object of the class.
 
 Which class is the superclass of all classes?
-A.
+A.Object class is the root or superclass of the class hierarchy, which is present in java. lang package. All predefined classes and user-defined classes are the subclasses from Object class
 
 What is difference between path and classpath variables?
-A.
+A.path variable is used to set the path for all Java software tools like javac.exe, java.exe, javadoc.exe, and so on. classpath variable is used to set the path for java classes.
 
 What is the difference between an Interface and Abstract class?
 A.
-
+An abstract class allows you to create functionality that subclasses can implement or override
 Can you make an Object from an Interface and Abstract class ? if not how do you use it ?
-A.
+A.You cannot create an object of abstract class or interface since they are incomplete class (interface is not even considered as a class.) What you can do is to implement a subclass of abstract class which, of course, must not be abstract
 
 what is Access Specifier?
 A.
@@ -64,13 +71,24 @@ What is static keyword in java? How it has been used in variables and methods ?
 A.
 
 What is final and how it has been used variables and methods?
-A.
+A.final is a keyword used with Class to make sure no other class can extend
+  it.
+  We can use the final keyword with methods to make sure child classes can’t
+  override it.
+  final keyword can be used with variables to make sure that it can be assigned
+  only once. However the state of the variable can be changed, for example, we
+  can assign a final variable to an object only once but the object variables
+  can change later on.
 
 What is final, finally and finalize?
 A.
 
 What is a constructor ?
 A.
+constructor refers to a block of code which is used to initialize an object.
+It must have the same name as that of the
+class. Also, it has no return type and it is automatically called when an
+object is created.
 
 Can we have multiple constructors in a class?
 A.
@@ -94,7 +112,7 @@ What version of java are you using?
 A.
 
 What is JAR stand for ?
-A.
+A.Java ARchive.
 
 What is the difference between JDK and JVM?
 A.
@@ -134,6 +152,10 @@ A.
 
 Which one will take more memory, an int or Integer?
 A.
+int is a primitive data type which takes 32 bits(4 bytes) to store.
+Integer is an object which takes 128 bits (16 bytes) to store int value so
+each Integer
+object can occupy 4 (or more) times the storage space as a primitive &#39;int&#39;.
 
 Why is String Immutable in Java?
 A.
@@ -146,42 +168,105 @@ A.
 
 What is JIT stands for?
 A.
-
+Just In Time compilation
 Explain Java Heap space and Garbage collection?
 A.
+Answer:Java objects reside in an area called the heap. The heap is created when the JVM starts up and may increase or decrease
+in size while the application runs. When the heap becomes full, garbage is collected.
+During the garbage collection objects that are no longer used are cleared, thus making space for new objects.
 
 Can you guarantee the garbage collection process?
 A.
+It can choose to reject the request and so it is not guaranteed that these calls will do the garbage collection.
+This decision is taken by the JVM based on the eden space availability in heap memory
 
 What is the difference between stack and heap in Java?
-A.
+A.Answer:
+  Heap memory is used by all the parts of the application whereas stack memory
+  is used only by one thread of execution.
+  Whenever an object is created, it’s always stored in the Heap space and stack
+  memory contains the reference to it.
+  Stack memory only contains local primitive variables and reference variables
+  to objects in heap space.
+  Memory management in the stack is done in a LIFO manner whereas it’s more
+  complex in Heap memory because it’s used
+  globally.
 
 What is reflection in java and why is it useful?
 A.
-
+answer:
+Reflection in Java is the ability to examine and/or modify the properties or
+behavior of an object at run-time.
 what is multithreading in java?
 A.
+Answer:
+Multithreading is a Java feature that allows concurrent execution
+of two or more parts of a program for maximum utilization of CPU
+
 
 What is the use of synchronization in Java?
 A.
+answer:
+Synchronization is the process of allowing threads to execute one after
+another.
 
 What is Framework?
 A.
 
+Frameworks are large bodies (usually many classes) of pre_written code to
+which
+you add your own code to solve a problem in a specific domain.
+
+
 What are the testing Framework available in java?
 A.
+Answer:
+Answer:
+TestNG is quite similar to JUnit, but with added functionality and features
+such as parallel test execution,
+parameterization, and more. It is inspired by JUnit and NUnit.
+
+
+What are the testing Framework available in java?
+Answer:
+1-testNG.
+2-JUnit.
+
 
 Difference between jUnit and testNG?
 A.
+Answer:
+
+TestNG is quite similar to JUnit, but with added functionality and features
+such as parallel test execution,
+parameterization, and more. It is inspired by JUnit and NUnit.
 
 What are the dependencies for this project?
 A.
+Answer:
+gson-2.6.2.jar
+java-jason.jar
+javax.jason.jar
+mongo-java-driver-3.4.0.jar
 
+mysql-connector-java-8.0.13.jar
+testng-6.8.7.jar
 what is dependency injection in java?
 A.
+answer:
+In software engineering, dependency injection is a technique whereby one
+object
+(or static method) supplies the dependencies of another object.
+
 
 What is static binding and dynamic binding?
 A.
+static binding in Java occurs during compile time while dynamic binding
+occurs during runtime.
+private , final and static methods and variables use static binding and are
+bonded by compiler
+while virtual methods are bonded during runtime based upon runtime object.
+
 
 
 

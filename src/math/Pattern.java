@@ -19,4 +19,18 @@ public class Pattern {
 
 
 	}
+
+
+	public static void printPattern() {
+		int num = 100;
+
+		System.out.print(num);
+		for (int i = 0; i < 4; i++) {
+			for (int j = 0; j < 10; j++) {
+				num -= 1 + i;
+				System.out.print("," + num);
+			}
+		}
+	}
 }
+
